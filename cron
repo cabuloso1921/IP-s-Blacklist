@@ -1,12 +1,5 @@
 #!/bin/sh
 
-echo "Criando rotinas..."
-echo "59 23 * * * root /opt/Bloqueia_IPs_Fail2Ban/cron" > /etc/cron.d/fail2ban
-
-echo "Criando arquivos..."
-echo "59 23 * * * root cd /opt/ ; git clone https://github.com/thytetgc/Bloqueia_IPs_Fail2Ban ; /opt/Bloqueia_IPs_Fail2Ban/cron" > /etc/cron.d/fail2ban
-cd /opt/ ; git clone https://github.com/thytetgc/Bloqueia_IPs_Fail2Ban ; chmod +x /opt/Bloqueia_IPs_Fail2Ban/cron ; /opt/Bloqueia_IPs_Fail2Ban/cron
-
 # ===================================================================================>
 
 echo "Bloqueando IPs..."
