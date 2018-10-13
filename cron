@@ -4,7 +4,7 @@
 
 echo "Bloqueando IPs..."
 for JAIL in sshd zimbra-admin zimbra-imap zimbra-pop zimbra-smtp zimbra-webmail; do
-for IPb in 192.99.113.0/24; do
+for IPb in 192.99.113.0/24 192.99.236.0/24; do
         fail2ban-client set $JAIL banip $IPb
                 done
         done
